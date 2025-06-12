@@ -16,18 +16,43 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+        .avoid-page-break {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
         .gradient {
             background-image: linear-gradient(to bottom, #e4f5ae, #ffffff);
+        }
+
+        .hero {
+            background: url(images/bg.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain;
+            position: relative;
+            z-index: 2;
+            background-color: white;
+        }
+
+        .herobg {
+            background: url(images/bg2.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain;
+            position: relative;
+            z-index: 2;
+            background-color: white;
         }
     </style>
 </head>
 
-<body class=" mx-auto flex flex-col justify-center items-center">
-    <section class=" flex flex-col justify-center w-[210mm]">
-        <img src="./images/bg.png" alt="" class=" h-[170vh] w-[210mm] absolute ">
+<body class=" mx-auto flex flex-col justify-center items-center w-[210mm]">
+    <section class=" flex flex-col justify-center hero">
+        <!--<img src="./images/bg.png" alt="" class=" h-[170vh] w-full absolute ">!-->
         <div class=" z-30">
 
-            <img src="./images/logo.png" alt="" class=" h-140 w-140 flex flex-col justify-center item-center mx-auto ">
+            <img src="./images/logo.png" alt="" class=" h-110 w-140 flex flex-col justify-center item-center mx-auto ">
             <div class=" gradient flex flex-row w-11/12 mx-auto rounded-t-4xl justify-center">
                 <div class=" w-3/5 px-5 py-7 space-y-5 ">
                     <h2 class=" text-3xl text-[#04558C] font-bold text-center">About Us</h2>
@@ -54,7 +79,7 @@
                 </div>
                 <div class=" w-2/5 py-7 space-y-5 flex flex-col item-start justify-start">
                     <h2 class=" text-3xl text-[#04558C] font-bold text-center">Our Services</h2>
-                    <div class="  flex flex-col space-y-4 ">
+                    <div class="  flex flex-col space-y-4 text-sm">
 
                         <div class="flex items-center flex-row">
                             <img src="./images/serviceImg/intl.png" alt="" class="w-13 h-13">
@@ -109,7 +134,8 @@
                 </div>
             </div>
         </div>
-        <div class="bg-[#16AEB1] text-white px-5 flex flex-row p-2 mt-10 items-center z-20 justify-between w-full">
+        <div
+            class="bg-[#16AEB1] text-white px-5  text-sm flex flex-row p-2 mt-10 items-center z-20 justify-between w-full">
             <div class=" flex-row flex items-center gap-2 w-1/3">
                 <img src="./images/icon/phone.svg" alt="" class=" h-8 w-8 ">
                 <span>+91 81244 55599 / +91 89393 55599 / 044 2474 5599</span>
@@ -126,9 +152,10 @@
             </div>
         </div>
     </section>
-    <section class="  w-[210mm] ">
-        <img src="./images/bg2.png" alt="" class=" h-[256vh] w-[210mm] absolute -z-20 ">
-        <div class=" z-20 pt-53 mb-10 px-8">
+    <section class="  w-[210mm] herobg">
+
+        <!-- <img src="./images/bg2.png" alt="" class=" h-[256vh] w-[210mm] absolute -z-20 ">-->
+        <div class=" z-20 pt-40 mb-10 px-8">
 
 
             <div class=" flex flex-row justify-between item-center ">
@@ -139,7 +166,7 @@
                     DATE:12 June 2025
                 </div>
             </div>
-            <div class=" class space-y-5 text-xl font-medium w-9/12 mt-6">
+            <div class=" class space-y-5 text-xl font-medium w-11/12 mt-4">
                 <h3>Greetings from Happy Holidays!!</h3>
                 <div class=" space-y-5">
                     <p>Thank you for inquiring your Holiday trip with us. We value your busiess and look
@@ -151,88 +178,88 @@
 
 
         </div>
-        <div class=" z-20 mt-10 flex justify-between w-full">
-            <div class=" w-1/2 flex flex-row -space-x-6">
-                <div class=" bg-[#96AE3C] h-[1000px] w-[200px]">
+        <div class=" z-20 mt-8 flex justify-between w-full">
+            <div class=" w-1/2 flex flex-row -space-x-6 h-fit">
+                <div class=" bg-[#96AE3C] h-[100vh] w-[150px]">
 
                 </div>
-                <div class=" space-y-5">
+                <div class=" space-y-4">
                     <div class="    flex flex-row  items-center font-semibold">
 
-                        <img src="./images/logo.png" alt="" class="rounded-full h-30 w-30  ">
+                        <img src="./images/logo.png" alt="" class="rounded-full h-15 w-20  ">
 
-                        <div class=" flex flex-col font-bold space-y-2 ">
-                            <span class=" bg-[#EEFAC1] p-2">CLIENT NAME</span>
+                        <div class=" flex flex-col font-bold space-y-2 text-sm ">
+                            <span class=" bg-[#EEFAC1] p-1  w-fit">CLIENT NAME</span>
                             <span>MR. UDHAYAKUMAR
                             </span>
                         </div>
                     </div>
                     <div class="    flex flex-row  items-center font-semibold">
 
-                        <img src="./images/logo.png" alt="" class="rounded-full h-30 w-30  ">
+                        <img src="./images/logo.png" alt="" class="rounded-full h-15 w-20  ">
 
                         <div class=" flex flex-col font-bold space-y-2 ">
-                            <span class=" bg-[#EEFAC1] p-2">TRIP ID</span>
+                            <span class=" bg-[#EEFAC1] p-1  w-fit">TRIP ID</span>
                             <span>HIH1651
                             </span>
                         </div>
                     </div>
                     <div class="    flex flex-row  items-center font-semibold">
 
-                        <img src="./images/logo.png" alt="" class="rounded-full h-30 w-30  ">
+                        <img src="./images/logo.png" alt="" class="rounded-full h-15 w-20  ">
 
                         <div class=" flex flex-col font-bold space-y-2 ">
-                            <span class=" bg-[#EEFAC1] p-2">DESTINATION</span>
-                            <span>SINGAPORE & MALAYSIA
+                            <span class=" bg-[#EEFAC1] p-1 w-fit">DESTINATION</span>
+                            <span class="whitespace-nowrap">SINGAPORE & MALAYSIA
                             </span>
                         </div>
                     </div>
                     <div class="    flex flex-row  items-center font-semibold">
 
-                        <img src="./images/logo.png" alt="" class="rounded-full h-30 w-30  ">
+                        <img src="./images/logo.png" alt="" class="rounded-full h-15 w-20  ">
 
                         <div class=" flex flex-col font-bold space-y-2 ">
-                            <span class=" bg-[#EEFAC1] p-2">DATE OF TRAVEL</span>
-                            <span> 19 SEPTEMBER 2025
+                            <span class=" bg-[#EEFAC1] p-1  w-fit">DATE OF TRAVEL</span>
+                            <span class="whitespace-nowrap"> 19 SEPTEMBER 2025
                             </span>
                         </div>
                     </div>
                     <div class="    flex flex-row  items-center font-semibold">
 
-                        <img src="./images/logo.png" alt="" class="rounded-full h-30 w-30  ">
+                        <img src="./images/logo.png" alt="" class="rounded-full h-15 w-20  ">
 
                         <div class=" flex flex-col font-bold space-y-2 ">
-                            <span class=" bg-[#EEFAC1] p-2">TRIP DURATION</span>
-                            <span>05 NIGHTS AND 06 DAYS
+                            <span class=" bg-[#EEFAC1] p-1  w-fit">TRIP DURATION</span>
+                            <span class="whitespace-nowrap">05 NIGHTS AND 06 DAYS
                             </span>
                         </div>
                     </div>
                     <div class="    flex flex-row  items-center font-semibold">
 
-                        <img src="./images/logo.png" alt="" class="rounded-full h-30 w-30  ">
+                        <img src="./images/logo.png" alt="" class="rounded-full h-15 w-20  ">
 
                         <div class=" flex flex-col font-bold space-y-2 ">
-                            <span class=" bg-[#EEFAC1] p-2">NUMBER OF PAX</span>
+                            <span class=" bg-[#EEFAC1] p-1  w-fit">NUMBER OF PAX</span>
                             <span>08 MEMBERS
                             </span>
                         </div>
                     </div>
                     <div class="    flex flex-row  items-center font-semibold">
 
-                        <img src="./images/logo.png" alt="" class="rounded-full h-30 w-30  ">
+                        <img src="./images/logo.png" alt="" class="rounded-full h-15 w-20  ">
 
                         <div class=" flex flex-col font-bold space-y-2 ">
-                            <span class=" bg-[#EEFAC1] p-2">QUOTE PREPARED BY</span>
+                            <span class=" bg-[#EEFAC1] p-1  w-fit">QUOTE PREPARED BY</span>
                             <span>MR. RAHDHA
                             </span>
                         </div>
                     </div>
                     <div class="    flex flex-row  items-center font-semibold">
 
-                        <img src="./images/logo.png" alt="" class="rounded-full h-30 w-30  ">
+                        <img src="./images/logo.png" alt="" class="rounded-full h-15 w-20  ">
 
                         <div class=" flex flex-col font-bold space-y-2 ">
-                            <span class=" bg-[#EEFAC1] p-2">QUOTE VALID UNTIL</span>
+                            <span class=" bg-[#EEFAC1] p-1  w-fit">QUOTE VALID UNTIL</span>
                             <span>24 OCTOBER 2025
                             </span>
                         </div>
@@ -245,9 +272,9 @@
             </div>
         </div>
     </section>
-    <section class="  w-[210mm] ">
-        <img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">
-        <div class=" z-20 pt-50 mb-10 px-8  space-y-4">
+    <section class="  w-[210mm] herobg ">
+        <!--<img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">-->
+        <div class=" z-20 pt-35 mb-10 px-8  space-y-4">
             <div
                 class="bg-[#16AEB1] text-white underline p-2  font-extrabold w-fit rounded-lg px-3 flex mx-auto  text-xl">
                 5N/6D
@@ -260,7 +287,7 @@
                 <h2 class="bg-[#96AE3C] text-black underline p-2 font-extrabold w-fit rounded-lg px-3 flex   text-xl">
                     DAY1</h2>
                 <h3 class=" text-base font-bold underline">Arrival in Singapore - Night Safari</h3>
-                <p class=" font-bold leading-7 text-sm w-10/12">Upon your arrival in <b>
+                <p class=" font-bold leading-7 text-sm ">Upon your arrival in <b>
 
                         Singapore
                     </b>
@@ -284,7 +311,7 @@
                 <h2 class="bg-[#96AE3C] text-black underline p-2 font-extrabold w-fit rounded-lg px-3 flex   text-xl">
                     DAY2</h2>
                 <h3 class=" text-base font-bold underline">Universal Studios & Gardens by the Bay</h3>
-                <p class=" font-bold leading-7 text-sm w-10/12">After breakfast, head to <b>
+                <p class=" font-bold leading-7 text-sm ">After breakfast, head to <b>
 
                         Universal Studios Singapore
                     </b>
@@ -309,7 +336,7 @@
                 <h2 class="bg-[#96AE3C] text-black underline p-2 font-extrabold w-fit rounded-lg px-3 flex   text-xl">
                     DAY3</h2>
                 <h3 class=" text-base font-bold underline">Singapore City Tour & Sentosa Island</h3>
-                <p class=" font-bold leading-7 text-sm w-10/12">After breakfast enjoy a Singapore city tour until the
+                <p class=" font-bold leading-7 text-sm ">After breakfast enjoy a Singapore city tour until the
                     afternoon, including photo stops at the Merlion, a
                     Chinese temple, and the Singapore Flyer, along with a drive past Little India, Chinatown, and
                     Orchard Road.
@@ -327,8 +354,8 @@
             </div>
         </div>
     </section>
-    <section class="  w-[210mm]">
-        <img src="./images/bg2.png" alt="" class=" h-[210vh] w-[210mm] absolute -z-20 ">
+    <section class="  w-[210mm] herobg">
+        <!--<img src="./images/bg2.png" alt="" class=" h-[210vh] w-[210mm] absolute -z-20 ">-->
         <div class=" z-20 pt-53 mb-10 px-8  space-y-4">
             <div class=" space-y-4 px-20">
                 <h2 class="bg-[#96AE3C] text-black underline p-2 font-extrabold w-fit rounded-lg px-3 flex   text-xl">
@@ -378,8 +405,8 @@
             </div>
         </div>
     </section>
-    <section class=" w-[210mm] ">
-        <img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">
+    <section class=" w-[210mm] herobg">
+        <!--<img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">-->
         <div class=" z-20 pt-53 mb-10 px-8  space-y-4">
             <div class=" px-10 py-2  space-y-4">
                 <span
@@ -437,8 +464,8 @@
             </div>
         </div>
     </section>
-    <section class="  w-[210mm] ">
-        <img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">
+    <section class="  w-[210mm] herobg ">
+        <!-- <img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">-->
         <div class=" z-20 pt-53 mb-10 px-8  space-y-12">
             <div class=" space-y-6">
 
@@ -606,8 +633,8 @@
             </div>
         </div>
     </section>
-    <section class=" w-[210mm] ">
-        <img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">
+    <section class=" w-[210mm] herobg ">
+        <!--<img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">-->
         <div class=" z-20 pt-53 mb-10 px-8  space-y-12">
 
             <div class=" mx-auto flex justify-center pt-5 flex-col items-center ">
@@ -707,8 +734,8 @@
             </div>
         </div>
     </section>
-    <section class=" w-[210mm]">
-        <img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">
+    <section class=" w-[210mm] herobg">
+        <!--<img src="./images/bg2.png" alt="" class=" h-[220vh] w-[210mm] absolute -z-20 ">-->
         <div class=" z-20 pt-53 mb-10 px-8  space-y-14">
             <div class=" mx-auto flex justify-center pt-5 flex-col items-center ">
 
