@@ -29,7 +29,7 @@
             background: url(images/bg.png);
             background-repeat: no-repeat;
             background-position: top;
-            background-size: cover;
+            background-size: contain;
             position: relative;
             z-index: 2;
             background-color: white;
@@ -74,13 +74,13 @@
 
 <body class=" mx-auto flex flex-col justify-center items-center w-[210mm]">
     <section class=" flex flex-col justify-center hero">
-        <div class=" z-30">
+        <div class=" z-30 flex flex-col gap-10">
 
             <img src="./images/logo.png" alt="" class=" h-110 w-140 flex flex-col justify-center item-center mx-auto ">
-            <div class=" gradient grid grid-cols-2 w-11/12 mx-auto rounded-t-4xl justify-center">
+            <div class=" gradient grid grid-cols-2 mt-11 w-11/12 mx-auto rounded-t-4xl justify-center">
                 <div class="  px-5 py-7 space-y-5 ">
                     <h2 class=" text-3xl text-[#04558C] font-bold text-center">About Us</h2>
-                    <div class="  border-r-2 text-sm font-medium pr-3 border-[#16AEB1] text-lg  text-justify">
+                    <div class="  border-r-2 text-sm font-medium pr-3 border-[#16AEB1]   text-justify">
 
                         <p class=" leading-8">Nothing but sheer passion drives the team at
                             Happy Holidays. We are not a simple
@@ -104,7 +104,7 @@
                 </div>
                 <div class=" py-7 space-y-5 flex flex-col item-start justify-start">
                     <h2 class=" text-3xl text-[#04558C] font-bold text-center">Our Services</h2>
-                    <div class="  flex flex-col space-y-3.5 text-sm">
+                    <div class="  flex flex-col  gap-4 text-sm">
 
                         <div class="flex items-center flex-row">
                             <img src="./images/serviceImg/intl.png" alt="" class="w-13 h-13">
@@ -179,7 +179,7 @@
     </section>
     <section class="  w-[210mm] herobg">
 
-        <div class=" z-20 pt-16 pb-10  px-8">
+        <div class=" z-20 pt-22 pb-10  px-8">
 
             <div class=" flex flex-row justify-end mb-15">
                 <img src="./images/banner.png" alt="" class=" h-15 w-3/6">
@@ -301,7 +301,7 @@
     </section>
     <section class="  w-[210mm] herobg ">
         <div class=" z-20 pt-35 flex flex-col items-center mb-7 px-8   ">
-            <div class=" pt-13">
+            <div class=" pt-15">
 
                 <div
                     class="bg-[#16AEB1] text-white underline p-1 mb-6 font-bold w-fit rounded-lg px-3 flex mx-auto  text-lg">
