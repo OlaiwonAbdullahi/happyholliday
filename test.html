@@ -16,11 +16,6 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        .gradient-bg {
-            background: linear-gradient(to bottom, #e2f6fe, #ffffff);
-         
-        }
-
         .avoid-page-break {
             page-break-inside: avoid;
             break-inside: avoid;
@@ -34,7 +29,7 @@
             background: url(images/bg.png);
             background-repeat: no-repeat;
             background-position: top;
-            background-size: cover;
+            background-size: contain;
             position: relative;
             z-index: 2;
             background-color: white;
@@ -57,7 +52,6 @@
             background-position: top;
             background-size: contain;
             position: relative;
-            width: 100%;
             z-index: 2;
             background-color: white;
         }
@@ -79,16 +73,16 @@
 </head>
 
 <body class=" mx-auto flex flex-col justify-center items-center w-[210mm]">
-    <section class=" flex flex-col justify-center px-4 hero">
-        <div class=" z-30">
+    <section class=" flex flex-col justify-center hero">
+        <div class=" z-30 flex flex-col gap-10">
 
             <img src="./images/logo.png" alt="" class=" h-110 w-140 flex flex-col justify-center item-center mx-auto ">
-            <div class=" gradient grid grid-cols-2 mx-auto mt-26 rounded-t-4xl justify-center">
+            <div class=" gradient grid grid-cols-2 mt-11  mx-auto rounded-t-4xl justify-center">
                 <div class="  px-5 py-7 space-y-5 ">
                     <h2 class=" text-3xl text-[#04558C] font-bold text-center">About Us</h2>
-                    <div class="  border-r-2 text-sm font-medium pr-3 border-[#16AEB1] text-lg  text-justify">
+                    <div class="  border-r-2 text-sm font-medium pr-3 border-[#16AEB1]   text-justify">
 
-                        <p class=" leading-8">Nothing but sheer passion drives the team at
+                        <p class=" leading-7">Nothing but sheer passion drives the team at
                             Happy Holidays. We are not a simple
                             commercial venture selling holiday packages
                             but an organization with educated and
@@ -98,7 +92,7 @@
                             policies so that we can leave a beautiful
                             country for our next generation.</p>
                         <br>
-                        <p class=" leading-8 ">
+                        <p class=" leading-7 ">
                             We love to give unusual promises that other
                             companies dare not. The inspiration behind
                             each package is the enthusiasm to share what
@@ -108,7 +102,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="py-7 space-y-5 flex flex-col item-start justify-start">
+                <div class=" py-7 space-y-5 flex flex-col item-start justify-start">
                     <h2 class=" text-3xl text-[#04558C] font-bold text-start pl-12">Our Services</h2>
                     <div class="  flex flex-col gap-4 text-sm">
 
@@ -165,27 +159,27 @@
                 </div>
             </div>
         </div>
+        <div
+            class="bg-[#16AEB1] text-white px-5  text-xs flex  p mt-10 items-center z-20 justify-around w-full">
+            <div class=" flex-row flex items-center gap-2 ">
+                <img src="./images/icon/phone.svg" alt="" class=" h-7 w-7 ">
+                <span>+91 81244 55599 / +91 89393 55599 / 044 2474 5599</span>
+            </div>
+            <div class="  flex-row flex items-center gap-2 ">
+                <img src="./images/icon/email.svg" alt="" class=" h-7 w-7 ">
 
+                <span>info@happyholidays.in</span>
+            </div>
+            <div class="  flex-row flex items-center gap-2 ">
+                <img src="./images/icon/ig.svg" alt="" class=" h-7 w-7 ">
+
+                <span>happyholidays_pvtltd</span>
+            </div>
+        </div>
     </section>
-    <div class="bg-[#16AEB1] text-white p-2  text-xs flex   mt-5 items-center justify-around w-full">
-        <div class=" flex-row flex items-center gap-1 ">
-            <img src="./images/icon/phone.svg" alt="" class=" h-5 w-5 ">
-            <span>+91 81244 55599 / +91 89393 55599 / 044 2474 5599</span>
-        </div>
-        <div class="  flex-row flex items-center gap-1 ">
-            <img src="./images/icon/email.svg" alt="" class=" h-5 w-5 ">
-
-            <span>info@happyholidays.in</span>
-        </div>
-        <div class="  flex-row flex items-center gap-2 ">
-            <img src="./images/icon/ig.svg" alt="" class=" h-5 w-5 ">
-
-            <span>happyholidays_pvtltd</span>
-        </div>
-    </div>
     <section class="  w-[210mm] herobg">
 
-        <div class=" z-20 pt-16 pb-5  px-8">
+        <div class=" z-20 pt-22 pb-10  px-8">
 
             <div class=" flex flex-row justify-end mb-15">
                 <img src="./images/banner.png" alt="" class=" h-15 w-3/6">
@@ -198,7 +192,7 @@
                     DATE:12 June 2025
                 </div>
             </div>
-            <div class="  space-y-4 text-lg   mt-4">
+            <div class="  space-y-4 text-xl font-medium w-10/12 mt-4">
                 <h3>Greetings from Happy Holidays!!</h3>
                 <div class=" space-y-4">
                     <p>Thank you for inquiring your Holiday trip with us. We value your busiess and look
@@ -211,15 +205,15 @@
 
         </div>
         <div class=" z-20   flex justify-between w-full">
-            <div class="  flex flex-row -space-x-2 h-fit pb-6">
-                <div class=" bg-[#96AE3C] h-[630px] w-[100px]">
+            <div class="  flex flex-row -space-x-3 h-fit pb-6">
+                <div class=" bg-[#96AE3C] h-[630px] w-[110px]">
 
                 </div>
                 <div class=" space-y-4">
 
                     <div class="    flex flex-row -space-x-2  items-center font-semibold">
 
-                        <img src="./images/infoImg/user.png" alt="" class="rounded-full h-16 w-16 object-cover z-20 ">
+                        <img src="./images/infoImg/user.png" alt="" class="rounded-full h-15 w-15 object-cover z-20 ">
 
                         <div class=" flex flex-col font-bold space-y-1 text-sm  ">
                             <span class=" bg-[#EEFAC1] p-1  w-fit px-5 slant">CLIENT NAME</span>
@@ -273,7 +267,7 @@
 
                         <div class=" flex flex-col font-bold space-y-1 text-sm">
                             <span class=" bg-[#EEFAC1] p-1  w-fit px-5 slant">NUMBER OF PAX</span>
-                            <span class="px-4"> 05 Adults + 02 Children
+                            <span class="px-4">08 MEMBERS
                             </span>
                         </div>
                     </div>
@@ -305,140 +299,159 @@
             </div>
         </div>
     </section>
-    <div class="bg-[#16AEB1] text-white p-1  text-xs flex   mt-5 items-center justify-around w-full">
+    <section class="  w-[210mm] herobg ">
+        <div class=" z-20 pt-35 flex flex-col items-center mb-7 px-8   ">
+            <div class=" pt-15">
 
-    </div>
-    <section class="w-[210mm] relative bg-cover bg-center herobg">
-        <div class="z-20 py-2 px-8 flex flex-col items-center gap-10">
-            <!-- Title -->
-            <div class="w-full mt-50 text-center">
-                <div class="bg-[#16AEB1] text-white underline font-bold rounded-lg px-4 py-1 text-lg inline-block">
-                    5N/6D ITINERARY FOR MR. UDHAYAKUMAR
+                <div
+                    class="bg-[#16AEB1] text-white underline p-1 mb-6 font-bold w-fit rounded-lg px-3 flex mx-auto  text-lg">
+                    5N/6D
+                    ITINERARY
+                    FOR MR,
+                    UDHAYAKUMAR
                 </div>
             </div>
 
-            <!-- Itinerary Content -->
-            <div class="flex flex-col my-10 w-full gap-10">
-                <!-- Day 1 -->
-                <div class="space-y-3 px-5">
-                    <h2 class="bg-[#96AE3C] text-black underline font-bold rounded-lg  p-1 w-fit text-base">DAY 1:
-                    </h2>
-                    <h3 class="text-base font-bold underline">Arrival in Singapore - Night Safari</h3>
-                    <p class="leading-7 text-sm text-justify">
-                        Upon your arrival in <b>Singapore</b> in the afternoon, check in to your hotel, have lunch, and
-                        freshen up.
-                        In the evening, visit the <b>Night Safari</b>, the world’s first nocturnal zoo, where you can
-                        experience wildlife in their natural night-time habitat.
-                        After an exciting evening at the safari, return to your hotel for an overnight stay.
-                        Enjoy dinner at a nearby Indian restaurant.
-                    </p>
-                    <div class="font-bold italic text-sm">Meal Included: Breakfast, Lunch & Dinner</div>
-                </div>
+            <div class=" space-y-2 pb-7 px-5 ">
+                <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg px-3 flex   text-base">
+                    DAY1</h2>
+                <h3 class=" text-base font-bold underline">Arrival in Singapore - Night Safari</h3>
+                <div class=" space-y-2">
 
-                <!-- Day 4 -->
-                <div class="space-y-3 px-5">
-                    <h2 class="bg-[#96AE3C] text-black underline font-bold rounded-lg  px-1 w-fit text-base">DAY 2:
-                    </h2>
-                    <h3 class="text-base font-bold underline">Universal Studios & Gardens by the Bay</h3>
-                    <p class=" leading-7 text-sm text-justify">
-                        After breakfast, head to <b>Universal Studios Singapore</b> for a thrilling day at Southeast
-                        Asia’s first and only Hollywood-themed park.
-                        Entry ticket is included, along with a lunch coupon to enjoy a meal inside the park.
-                        Enjoy exciting rides like Transformers 3D, Jurassic Park Rapids, and Revenge of the Mummy.
-                        After that, visit <b>Gardens by the Bay</b> (entry to the Cloud Forest & Flower Dome included).
-                        Then return to your hotel for an overnight stay.
-                        Enjoy dinner at a nearby Indian restaurant.
-                    </p>
-                    <div class="font-bold italic text-sm">Meal Included: Breakfast, Lunch & Dinner</div>
-                </div>
+                    <p class=" font-semibold leading-9 text-sm ">Upon your arrival in <b>
 
-                <!-- Day 3 -->
-                <div class="space-y-3 px-5">
-                    <h2 class="bg-[#96AE3C] text-black underline font-bold rounded-lg  p-1 w-fit text-base">DAY 3:
-                    </h2>
-                    <h3 class="text-base font-bold underline">Singapore City Tour & Sentosa Island</h3>
-                    <p class=" leading-7 text-sm text-justify">
-                        After breakfast, enjoy a Singapore city tour until the afternoon, including photo stops at the
-                        Merlion, a Chinese temple, and the Singapore Flyer, along with a drive past Little India,
-                        Chinatown, and Orchard Road.
-                        After lunch, head to <b>Sentosa</b> Island with a complimentary one-way cable car ride.
-                        Entry is included for <b>Wings of Time</b> and <b>Madame Tussauds 4-in-1</b>.
-                        Other attractions like S.E.A. Aquarium and SkyPark are optional.
-                        After a fun-filled day, return to your hotel for an overnight stay and enjoy dinner at a nearby
-                        Indian restaurant.
+                            Singapore
+                        </b>
+                        in the afternoon, check in your hotel, have lunch, and freshen up. In
+                        the
+                        evening, visit the <b>
+
+                            Night Safari,
+                        </b>
+                        the world’s first nocturnal zoon, where you can experience wildlife
+                        in their
+                        natural night-time habitat. After an exciting evening at the safari, return to your hotel for an
+                        overnight stay.
+                        Enjoy dinner at a nearby indian restaurant.</p>
+                    <div class=" font-bold italic text-sm">
+                        Meal Included:Breakfast ,Lunch & Dinner
+                    </div>
+                </div>
+            </div>
+
+            <div class=" space-y-2 px-5 pb-10">
+                <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg px-3 flex   text-base">
+                    DAY4</h2>
+                <h3 class=" text-base font-bold underline">Universal Studios & Gardens by the Bay</h3>
+                <div class=" space-y-1.5">
+
+                    <p class=" font-semibold leading-9 text-sm ">After breakfast, head to <b>
+
+                            Universal Studios Singapore
+                        </b>
+                        for a thrilling day at Southeast Asia’s first and only
+                        Hollywood-themed Park. Entry ticket is included, along with a lunch coupon to enjoy a meal
+                        inside
+                        the park.
+                        Enjoy exciting rides like Transformers 3D, Jurassic Park Rapids, Revenge of the Mummy, and.
+                        After
+                        that visit
+                        <b>
+
+                            Gardens by the Bay
+                        </b>
+                        (with entry to the Cloud Forest & Flower Dome included). Then return to your
+                        hotel for
+                        an overnight stay. Enjoy dinner at a nearby Indian restaurant.
                     </p>
-                    <div class="font-bold italic text-sm">Meal Included: Breakfast, Lunch & Dinner</div>
+                    <div class=" font-bold italic text-sm">
+                        Meal Included:Breakfast ,Lunch & Dinner
+                    </div>
+                </div>
+            </div>
+            <div class=" space-y-2 px-5">
+                <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg px-3 flex   text-base">
+                    DAY3</h2>
+                <h3 class=" text-base font-bold underline">Singapore City Tour & Sentosa Island</h3>
+                <div class=" space-y-1.5">
+
+                    <p class=" font-semibold leading-9 text-sm ">After breakfast enjoy a Singapore city tour until the
+                        afternoon, including photo stops at the Merlion, a
+                        Chinese temple, and the Singapore Flyer, along with a drive past Little India, Chinatown, and
+                        Orchard Road.
+                        After lunch, head to <b> Sentosa</b> Island with a complimentary 1 - way cable car ride. At
+                        Sentosa,
+                        entry
+                        is
+                        included for <b></b> Wings of Time and Madame Tussauds 4 in 1</b>. Other attractions like S.E.A.
+                        Aquarium and
+                        SkyPark are optional. After a fun-filled day retuen to your hotel for an overnight stay and
+                        enjoy
+                        dinner at a
+                        nearby Indian restaurant.</p>
+                    <div class=" font-bold italic text-sm">
+                        Meal Included:Breakfast ,Lunch & Dinner
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
     <section class="  w-[210mm] herobg">
-        <div class=" z-20 pt-16 mb-10 px-8   space-y-4">
-            <div class="py-20 mt-20 flex flex-col gap-10">
-                <div class=" space-y-3  px-5">
-                    <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg  flex   text-base">
-                        DAY4:</h2>
-                    <h3 class=" text-sm font-bold underline">Transfer to Kuala Lumpur & Kuala Lumpur City Tour</h3>
-                    <p class="  leading-7 text-sm ">After breakfast at the hotel, check out and transfer to
-                        Kuala Lumpur by coach. Upon arrival, check in to
-                        your hotel and relax. In the evening, proceed for a Kuala Lumpur city tour, covering major
-                        landmarks
-                        such
-                        as the King’s Palace, National Mosque, Independence Square, and a photo shop at the iconic KL
-                        Tower.
-                        You
-                        will also visit the Petronas Twin Towers, depending on slot availability (entry tickets
-                        included).
-                        Later, return
-                        to your hotel for an overnight stay and enjoy dinner at a nearby Indian restaurant.</p>
-                    <div class=" font-bold italic text-sm">
-                        Meal Included:Breakfast ,Lunch & Dinner
-                    </div>
+        <div class=" z-20 pt-35 mb-10 px-8  space-y-4">
+            <div class=" space-y-3 py-10 px-5">
+                <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg px-3 flex   text-base">
+                    DAY4</h2>
+                <h3 class=" text-sm font-bold underline">Transfer to Kuala Lumpur & Kuala Lumpur City Tour</h3>
+                <p class=" font-semibold leading-7 text-sm ">After breakfast at the hotel, check out and transfer to
+                    Kuala Lumpur by coach. Upon arrival, check in to
+                    your hotel and relax. In the evening, proceed for a Kuala Lumpur city tour, covering major landmarks
+                    such
+                    as the King’s Palace, National Mosque, Independence Square, and a photo shop at the iconic KL Tower.
+                    You
+                    will also visit the Petronas Twin Towers, depending on slot availability (entry tickets included).
+                    Later, return
+                    to your hotel for an overnight stay and enjoy dinner at a nearby Indian restaurant.</p>
+                <div class=" font-bold italic text-sm">
+                    Meal Included:Breakfast ,Lunch & Dinner
                 </div>
-                <div class=" space-y-3 pb-10 px-5">
-                    <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg px-3 flex   text-base">
-                        DAY5:</h2>
-                    <h3 class=" text-sm font-bold underline">Batu Caves & Genting Highlands Day Trip</h3>
-                    <p class=" leading-7 text-sm ">After breakfast at the hotel, you will visit the famous
-                        Batu Caves to explore the Hindu temple complex and
-                        admire the giant Lord Murugan statue. After spending around half the day at Batu Caves you will
-                        travel to
-                        Genting Highlands, via scenic two way cable car (complementary). Upon arrival, enjoy a
-                        complementary
-                        l.lunch and explore the indoor and outdoor theme park (tickets not included). After a fun-filled
-                        day, you will
-                        return to your hotel for an overnight stay and have dinner at a nearby Indian restaurant. </p>
-                    <div class=" font-bold italic text-sm">
-                        Meal Included:Breakfast ,Lunch & Dinner
-                    </div>
+            </div>
+            <div class=" space-y-3 pb-10 px-5">
+                <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg px-3 flex   text-base">
+                    DAY5</h2>
+                <h3 class=" text-sm font-bold underline">Batu Caves & Genting Highlands Day Trip</h3>
+                <p class=" font-semibold leading-7 text-sm ">After breakfast at the hotel, you will visit the famous
+                    Batu Caves to explore the Hindu temple complex and
+                    admire the giant Lord Murugan statue. After spending around half the day at Batu Caves you will
+                    travel to
+                    Genting Highlands, via scenic two way cable car (complementary). Upon arrival, enjoy a complementary
+                    l.lunch and explore the indoor and outdoor theme park (tickets not included). After a fun-filled
+                    day, you will
+                    return to your hotel for an overnight stay and have dinner at a nearby Indian restaurant. </p>
+                <div class=" font-bold italic text-sm">
+                    Meal Included:Breakfast ,Lunch & Dinner
                 </div>
-                <div class=" space-y-3 px-5 ">
-                    <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg px-3 flex   text-base">
-                        DAY6</h2>
-                    <h3 class=" text-sm font-bold underline">Leisure Time & Departure</h3>
-                    <p class="  leading-7 text-sm ">After breakfast, the day is free at leisure until
-                        evening. Enjoy some last minute shopping or explore the city
-                        at your own pace. Later, check from the hotel and transfer to the airport for your onward
-                        journey.
-                        Board
-                        your flight with wonderful memories of your trip. </p>
-                    <div class=" font-bold italic text-sm">
-                        Meal Included:Breakfast ,Lunch & Dinner
-                    </div>
+            </div>
+            <div class=" space-y-3 px-5 ">
+                <h2 class="bg-[#96AE3C] text-black underline p-1 font-bold w-fit rounded-lg px-3 flex   text-base">
+                    DAY6</h2>
+                <h3 class=" text-sm font-bold underline">Leisure Time & Departure</h3>
+                <p class=" font-semibold leading-7 text-sm ">After breakfast, the day is free at leisure until
+                    evening. Enjoy some last minute shopping or explore the city
+                    at your own pace. Later, check from the hotel and transfer to the airport for your onward journey.
+                    Board
+                    your flight with wonderful memories of your trip. </p>
+                <div class=" font-bold italic text-sm">
+                    Meal Included:Breakfast ,Lunch & Dinner
                 </div>
-
             </div>
         </div>
     </section>
     <section class=" w-[210mm] herobg">
-        <div class=" z-20 pt-35 mb-10  ">
+        <div class=" z-20 pt-45 mb-10  ">
             <div class=" px-8">
 
                 <div class="  p-2 mt-5 space-y-3">
-                    <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-2 flex   text-md">INCLUSIONS:</span>
+                    <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-3 flex   text-xl">INCLUSIONS:</span>
                     <ul class=" font-medium pl-12 list list-disc leading-6 text-sm">
                         <li>Economy class round trip airfare with 7kg cabin baggage + 20kg check-in baggage.</li>
                         <li>From Singapore to Kuala Lumpur coach transfer</li>
@@ -465,7 +478,7 @@
                 </ul>
             </div>
             <div class=" px-12 space-y-3 py-2">
-                <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-2 flex   text-md">EXCLUSIONS:</span>
+                <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-3 flex   text-xl">EXCLUSIONS:</span>
                 <ul class=" font-medium pl-12 list list-disc leading-6 text-sm">
                     <li>Gst 5% & Tcs 5%</li>
                     <li>Genting Highisland theme park tickets is not included</li>
@@ -478,7 +491,7 @@
                 </ul>
             </div>
             <div class="  px-12 py-2  space-y-3">
-                <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-2 flex   text-md">TERMS &
+                <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-3 flex   text-xl">TERMS &
                     CONDITIONS</span>
                 <ul class=" font-medium pl-12 list list-disc leading-6 text-sm">
                     <li>For hotels standard check-in time is 1500 hours and check out time is 1100 hours for
@@ -495,7 +508,7 @@
     <section class="  w-[210mm] herobg  avoid-page-break ">
         <div class=" z-20 pt-35 mb-10 px-8  ">
             <div class=" space-y-6 pt-15">
-                <div class=" ">
+                <div class=" pb-3">
 
                     <div
                         class="bg-[#16AEB1] text-white  mb-4  p-1 font-bold w-fit rounded-lg px-3 flex mx-auto  text-xl">
@@ -533,11 +546,11 @@
                     </tbody>
                 </table>
             </div>
-            <div class=" space-y-6">
-                <div class=" pt-10">
+            <div class=" space-y-4">
+                <div class=" py-4">
 
                     <div
-                        class="bg-[#16AEB1] text-white  p-1 mb-4 font-bold w-fit rounded-lg px-3 flex mx-auto  text-xl">
+                        class="bg-[#16AEB1] text-white  p-1 my-4 font-bold w-fit rounded-lg px-3 flex mx-auto  text-xl">
                         CHENNAI TO SINGAPORE FLIGHT TICKET
                     </div>
                 </div>
@@ -590,11 +603,11 @@
                     </div>
                 </div>
             </div>
-            <div class=" space-y-6">
-                <div class=" pt-10">
+            <div class=" space-y-4">
+                <div class=" py-3">
 
                     <div
-                        class="bg-[#16AEB1] text-white  p-1 mb-4 font-bold w-fit rounded-lg px-3 flex mx-auto  text-xl">
+                        class="bg-[#16AEB1] text-white  p-1 my-4 font-bold w-fit rounded-lg px-3 flex mx-auto  text-xl">
                         KUALA LUMPUR TO CHENNAI FLIGHT TICKET
                     </div>
                 </div>
@@ -658,16 +671,14 @@
             </div>
         </div>
     </section>
-    <section class="w-[210mm] herobg avoid-page-break">
-        <div class="z-20 py-25
-        
-         mb-10 px-4">
+    <section class="w-[210mm] herobg">
+        <div class="z-20 py-45 mb-10 ">
 
-            <div class=" py-15">
+            <div class=" ">
 
-                <div class="mx-auto flex flex-col items-center justify-center pt-6 paybg">
+                <div class="mx-auto flex flex-col items-center justify-center pt-15 paybg">
                     <div class="bg-[#16AEB1] text-white px-3 py-1 font-bold text-xl w-fit mx-auto">
-                        PAYMENT METHODS
+                        PAYMENT METHOD
                     </div>
 
                     <div class="p-8 space-y-4 text-center">
@@ -697,34 +708,34 @@
                 </div>
 
                 <div class="p-4 space-y-3">
-                    <div class=" mx-auto text-sm">
+                    <div class="max-w-xl mx-auto text-sm">
                         <div class="bg-white shadow-lg overflow-hidden">
                             <table class="w-full">
                                 <tbody>
-                                    <tr class="border border-[#e2f6fe]">
+                                    <tr class="border border-black">
                                         <td class="bg-[#CCE0E1] px-6 py-2 font-semibold text-gray-700 w-1/3">ACCOUNT
                                             NAME</td>
                                         <td class="bg-[#CCE0E1] px-6 py-2 text-gray-800">HAPPY HOLIDAYS TRAVEL INDIA
                                             PRIVATE LIMITED</td>
                                     </tr>
-                                    <tr class="border border-[#e2f6fe]">
+                                    <tr class="border border-black">
                                         <td class="bg-[#CCE0E1] px-6 py-2 font-semibold text-gray-700">ACCOUNT NUMBER
                                         </td>
                                         <td class="bg-[#CCE0E1] px-6 py-2 text-gray-800">77 77 05 299 599</td>
                                     </tr>
-                                    <tr class="border border-[#e2f6fe]">
+                                    <tr class="border border-black">
                                         <td class="bg-[#CCE0E1] px-6 py-2 font-semibold text-gray-700">IFSC CODE</td>
                                         <td class="bg-[#CCE0E1] px-6 py-2 text-gray-800">ICIC0002789</td>
                                     </tr>
-                                    <tr class="border border-[#e2f6fe]">
+                                    <tr class="border border-black">
                                         <td class="bg-[#CCE0E1] px-6 py-2 font-semibold text-gray-700">BANK</td>
                                         <td class="bg-[#CCE0E1] px-6 py-2 text-gray-800">ICICI BANK</td>
                                     </tr>
-                                    <tr class="border border-[#e2f6fe]">
+                                    <tr class="border border-black">
                                         <td class="bg-[#CCE0E1] px-6 py-2 font-semibold text-gray-700">BRANCH</td>
                                         <td class="bg-[#CCE0E1] px-6 py-2 text-gray-800">ASHOK PILLAR, CHENNAI</td>
                                     </tr>
-                                    <tr class="border border-[#e2f6fe]">
+                                    <tr class="border border-black">
                                         <td class="bg-[#CCE0E1] px-6 py-2 font-semibold text-gray-700">ACCOUNT TYPE</td>
                                         <td class="bg-[#CCE0E1] px-6 py-2 text-gray-800">CURRENT ACCOUNT</td>
                                     </tr>
@@ -751,22 +762,25 @@
 
                 </div>
             </div>
-            <div class="mx-auto gradient-bg rounded-2xl shadow-xl flex justify-center py-6 flex-col items-center">
-                <div class="bg-[#16AEB1] text-white p-2 font-bold w-fit px-3 flex mx-auto text-lg">
+            <div class=" mx-auto flex justify-center py-6 flex-col items-center paybg ">
+
+
+                <div class="bg-[#16AEB1] text-white  p-2  font-bold w-fit  px-3 flex mx-auto  text-lg">
                     GENERAL TERMS AND CONDITIONS
                 </div>
-                <div class="px-10 space-y-3 mt-3">
-                    <ul class="list list-disc leading-6 space-y-3 text-sm">
-                        <li>For hotels, standard check-in time is 1200 hours and check-out time is 1100 hours for
+                <div class=" w-8/12 space-y-3 mt-3">
+
+                    <ul class=" list list-disc leading-6 text-sm">
+                        <li>For hotels, standard check -in time is 1200 hours and check -out time is 1100 hours for
                             domestic destinations within india.</li>
-                        <li>For hotels, standard check-in time is 1500 hours and check-out time is 1100 hours for
+                        <li>For hotels, standard check -in time is 1500 hours and check -out time is 1100 hours for
                             international destinations within india.</li>
                         <li>Rooms and rates will be subject to availability at the time of actual confirmation.</li>
                         <li>Vehicles will be utilised as per the itinerary, and any extra usage charges must be
                             paid directly.</li>
                         <li>The Airfare is subject to change at the time of confirmation</li>
                         <li>Standard type rooms will be offered in all category hotels.</li>
-                        <li>0-5 years: No Charges, 5-10 years: 50% Charges, above 10 years: Adult Cost.</li>
+                        <li>0 -5 years: No Charges, 5-10 years: 50% Charges, above 10 years: Adult Cost.</li>
                     </ul>
                 </div>
             </div>
@@ -778,14 +792,14 @@
     <section class=" w-[210mm] herobg avoid-page-break ">
         <div class=" z-20 py-35 mb-10 px-8  ">
             <div class=" py-15">
-                <div class=" mx-auto flex justify-center py-6 flex-col items-center  gradient-bg rounded-2xl shadow-xl  ">
+                <div class=" mx-auto flex justify-center py-6 flex-col items-center paybg ">
 
                     <div class="bg-[#16AEB1] text-white  p-2  font-bold w-fit  px-3 flex mx-auto  text-xl">
                         PAYMENT TERMS
                     </div>
-                    <div class="px-10   mt-3">
+                    <div class=" w-8/12 space-y-3 mt-3">
 
-                        <ul class=" list list-disc  leading-6 space-y-3 text-sm">
+                        <ul class=" list list-disc  leading-6 text-sm">
                             <li>After confirmation of any package request: 25% of the tour package cost is required
                                 immediately
                                 to book all the respective services.</li>
@@ -800,15 +814,15 @@
                     </div>
                 </div>
             </div>
-            <div class=" mx-auto flex justify-center py-6 flex-col items-center  gradient-bg rounded-2xl shadow-xl ">
+            <div class=" mx-auto flex justify-center py-5 flex-col items-center paybg ">
 
 
                 <div class="bg-[#16AEB1] text-white  p-2  font-bold w-fit  px-3 flex mx-auto  text-lg">
                     CANCELLATION POLICY
                 </div>
-                <div class="px-10  space-y-3 mt-4">
+                <div class=" w-8/12 space-y-3 mt-4">
 
-                    <ul class=" list list-disc space-y-3  leading-6 text-sm">
+                    <ul class=" list list-disc leading-6 text-sm">
                         <li>All cancellations must be made in e-mail format only.</li>
                         <li>Any cancellation at 45 days prior to arrival date: No charge.</li>
                         <li>Between 45 days - 30 days prior to arrival date: 25% of invoice value.</li>
@@ -823,13 +837,13 @@
             </div>
         </div>
     </section>
-    <section class=" w-[210mm] lastbg relative">
-        <div class=" z-20 pt-92  mb-10 px-8 pb-20  space-y-20">
-            <div class=" flex justify-center absolute left-0 right-0 ">
+    <section class=" w-[210mm] lastbg ">
+        <div class=" z-20 pt-92  mb-10 pb-20 flex flex-col gap-6 ">
+            <div class=" flex justify-center">
                 <span class="text-[#04558C] text-3xl mt-10 text-center mx-auto font-bold ">OUR ECO - POLICY</span>
             </div>
             <div
-                class=" bg-[#16AEB1] mt-10 text-white mx-auto justify-center font-semibold flex items-center  p-6  text-center w-full text-xl">
+                class=" bg-[#16AEB1] text-white mx-auto justify-center font-semibold flex items-center  p-6  text-center w-full text-xl">
                 <img src="./images//feature.png" alt="" class=" h-25 w-25">
                 <ul class=" space-y-5">
                     <li>TAKE NOTHING BUT PICTURES</li>
@@ -838,7 +852,7 @@
                     <li>KILL NOTHING BUT TIME</li>
                 </ul>
             </div>
-            <div class=" flex justify-center ">
+            <div class=" flex justify-center mt-8 ">
                 <span class="text-[#04558C] text-2xl  text-center mx-auto font-bold ">HAPPY HOLIDAYS TRAVEL INDIA
                     PRIVATE LIMITED</span>
             </div>
