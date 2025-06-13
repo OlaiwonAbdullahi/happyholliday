@@ -45,11 +45,12 @@
             background: url(images/bg2.png);
             background-repeat: no-repeat;
             background-position: top;
-            background-size: cover;
+            background-size: contain;
 
             position: relative;
             z-index: 2;
             background-color: white;
+
         }
 
         .paybg {
@@ -191,7 +192,7 @@
             </div>
         </div>
     </section>
-    <section class="  w-[215mm] herobg">
+    <section class="  w-[215mm] herobg min-h-screen">
 
         <div class=" z-20 pt-16 pb-5  px-8">
 
@@ -314,10 +315,10 @@
         </div>
     </section>
 
-    <section class="w-[215mm] herobg">
-        <div class="z-20  flex flex-col items-center ">
+    <section class="w-[215mm] herobg min-h-screen flex flex-col item-center justify-center ">
+        <div class="z-20  flex flex-col items-center mt-40  ">
             <!-- Title -->
-            <div class="w-full mt-50 text-center">
+            <div class="w-full  text-center">
                 <div class="bg-[#16AEB1] text-white underline font-bold rounded-lg px-4 py-1 text-lg inline-block">
                     5N/6D ITINERARY FOR MR. UDHAYAKUMAR
                 </div>
@@ -443,14 +444,12 @@
         </div>
     </section>
 
-
-    <section class=" w-[215mm] herobg">
-        <div class=" z-20 pt-35  ">
-            <div class=" px-8">
-
-                <div class="  p-2 mt-5 space-y-3">
-                    <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-2 flex   text-md">INCLUSIONS:</span>
-                    <ul class=" font-medium pl-12 list list-disc leading-6 text-base textshadow">
+    <section class="w-[215mm] herobg">
+        <div class="z-20 pt-35">
+            <div class="px-15 space-y-10">
+                <div class="p-2 mt-5 space-y-3">
+                    <span class="bg-[#16AEB1] text-white p-1 font-bold w-fit px-2 flex text-md">INCLUSIONS:</span>
+                    <ul class="font-medium pl-12 list-disc leading-6 text-base textshadow">
                         <li>Economy class round trip airfare with 7kg cabin baggage + 20kg check-in baggage.</li>
                         <li>From Singapore to Kuala Lumpur coach transfer</li>
                         <li>Singapore VISA & Malaysia arrival card</li>
@@ -458,54 +457,49 @@
                         <li>Daily meals as per itinerary without transfers (Breakfast, Lunch, Dinner).</li>
                         <li>All transfers (airport, hotel & intercity).</li>
                         <li>City tours in Singapore & Kuala Lumpur.</li>
-                        <li>English- speaking tour guide.</li>
+                        <li>English-speaking tour guide.</li>
+                    </ul>
+                </div>
+
+                <!-- Entry tickets -->
+                <div class="space-y-3">
+                    <span class="text-black font-bold p-1 w-fit px-3 flex text-base">Entry tickets for:</span>
+                    <ul class="font-medium pl-14 list-disc leading-6 text-base textshadow">
+                        <li>Night Safari</li>
+                        <li>Universal Studios Singapore</li>
+                        <li>Gardens by the Bay (Cloud Forest & Flower Dome)</li>
+                        <li>Sentosa attractions (1 - Way Cable Car, Madame Tussauds 4-in-1, Wings of Time)</li>
+                        <li>Kuala Lumpur city tour with Petronas Twin Towers</li>
+                        <li>Genting Highlands visit with 2-way cable car and lunch</li>
+                    </ul>
+                </div>
+
+                <!-- Exclusions -->
+                <div class="space-y-3 py-2">
+                    <span class="bg-[#16AEB1] text-white p-1 font-bold w-fit px-2 flex text-md">EXCLUSIONS:</span>
+                    <ul class="font-medium pl-12 list-disc leading-6 text-base">
+                        <li class="textshadow">Gst 5% & Tcs 5%</li>
+                        <li class="textshadow">Genting Highlands theme park tickets not included</li>
+                        <li class="textshadow">Meals not mentioned in the inclusions</li>
+                        <li class="textshadow">Anything not mentioned in the package</li>
+                        <li class="textshadow">Anything of personal nature including porterage, tips, laundry, etc.</li>
+                        <li class="textshadow">Any cost arising due to natural calamities like landslides, etc.</li>
+                    </ul>
+                </div>
+
+                <!-- Special Note -->
+                <div class="py-2 space-y-3">
+                    <span class="bg-[#16AEB1] text-white p-1 font-bold w-fit px-2 flex text-md">SPECIAL NOTE</span>
+                    <ul class="font-medium pl-12 list-disc leading-6 text-base">
+                        <li class="textshadow">Hotel check-in: 3:00 PM, check-out: 11:00 AM</li>
+                        <li class="textshadow">Vehicle usage as per itinerary; extra charges apply</li>
+                        <li class="textshadow">Standard rooms will be offered</li>
                     </ul>
                 </div>
             </div>
-            <div class=" px-14 space-y-3">
-                <span class="text-black  font-bold  p-1  w-fit  px-3 flex   text-base">Entry
-                    tickets for:</span>
-                <ul class=" font-medium pl-14 list list-disc leading-6 text-base textshadow">
-                    <li>Night Safari</li>
-                    <li>Universal Studios Singapore</li>
-                    <li>Gardens by the Bay (Cloud Forest & Flower Dome)</li>
-                    <li>Sentosa attractions (1 - Way Cable Car, Madame Tussauds 4-in-1, Wings of Time)</li>
-                    <li>Kuala Lumpur city tour with Petronas Twin Towers</li>
-                    <li>Genting Highlands visit with 2- way cable car and lunch</li>
-
-                </ul>
-            </div>
-            <div class=" px-12 space-y-3 py-2">
-                <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-2 flex   text-md">EXCLUSIONS:</span>
-                <ul class=" font-medium pl-12 list list-disc leading-6 text-base ">
-                    <li class="textshadow">Gst 5% & Tcs 5%</li>
-                    <li class="textshadow">Genting Highisland theme park tickets is not included</li>
-                    <li class="textshadow">Meals which are not mentioned in the inclusions</li>
-                    <li class="textshadow">Anything not mentioned in the package</li>
-                    <li class="textshadow">Anything of personal nature including Porterage at hotels and airports, tips,
-                        laundry,
-                        liquors, mineral water, telephone charges, etc.</li>
-                    <li class="textshadow">Any cost arising due to natural calamities like landslides, roadblocks, etc.
-                    </li>
-
-                </ul>
-            </div>
-            <div class="  px-12 py-2  space-y-3">
-                <span class="bg-[#16AEB1] text-white  p-1 font-bold w-fit  px-2 flex   text-md">SPECIAL NOTE</span>
-                <ul class=" font-medium pl-12 list list-disc leading-6 text-base ">
-                    <li class="textshadow">For hotels standard check-in time is 1500 hours and check out time is 1100
-                        hours for
-                        international destinations outside india.</li>
-                    <li class="textshadow">Vehicle will be utilized as per the itinerary and any extra usage charges
-                        must be paid
-                        directly.</li>
-                    <li class="textshadow">Standard type rooms will offered in all hotels</li>
-
-                </ul>
-
-            </div>
         </div>
     </section>
+
 
 
     <section class="  w-[215mm] herobg  avoid-page-break ">
